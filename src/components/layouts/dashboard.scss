@@ -1,0 +1,17 @@
+.container{
+    height:100vh;   
+    .header{
+        background:none !important;
+        border-bottom: 2px solid rgb(167, 165, 165);
+        box-shadow: 0 0 2px rgb(167, 165, 165);
+    }
+    .left-sider{
+        border-right:1px solid rgb(185, 184, 184) !important;
+        background:none !important;
+    }
+    .right-sider{
+        border-left: 1px solid rgb(167, 165, 165) !important;
+        background:none !important;
+    }
+    
+}

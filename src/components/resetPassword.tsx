@@ -1,6 +1,6 @@
 import React,{useState} from 'react'; 
 import {Link} from "react-router-dom";
-import './login.scss';
+import './resetPassword.scss';
 import Card from '@mui/material/Card'
 import Logo from '../assets/red_icon.png'
 import Typography from '@mui/material/Typography';
@@ -42,11 +42,12 @@ export const ResetPassword:React.FC = ()=>{
 
         <div className="container">
             <div className="clip-class"></div>
-            <Card className="card-content">
+            <Card className="resetPass">
                 <img style={{width:"50px",height:"50px"}} src={Logo} alt="logo"/>
                 <Typography variant="h3" className="login_title">Set New Password</Typography>
-                <span className="login_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-
+                <div className="login_description">
+                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                </div>
                 <form className="form-input">
                 <FormControl sx={{ m: 1, width: '30ch' }} variant="standard">
           <FormHelperText id="standard-password-helper-text" style={{fontSize:"15px", color:"black"}}>Password</FormHelperText>
