@@ -12,6 +12,7 @@ import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import FormControl from '@mui/material/FormControl';
 import IconButton from '@mui/material/IconButton';
 import Button from "@mui/material/Button";
+import {useHistory} from 'react-router-dom';
 
 
 interface State {
@@ -32,7 +33,12 @@ export const Login:React.FC = ()=>{
     const handleChange = (prop:keyof State)=>(e:React.ChangeEvent<HTMLInputElement>)=>{
         setValues({...values, [prop]: e.target.value})
     }
+    const history = useHistory();
+    const handleSubmit = (e:any)=>{
+      e.preventDefault();
 
+      history.push('/dashboard')
+    }
     const handleShowPassword = ()=>{
         setValues({
             ...values,
@@ -89,7 +95,7 @@ export const Login:React.FC = ()=>{
             placeholder="password"
           />
         </FormControl>
-       <Button variant="contained" className="login_button">Login</Button>
+       <Button variant="contained" onClick={handleSubmit} className="login_button">Login</Button>
 
        <span className="forgot_pass">Forgot password?   <strong ><Link className="reset_pass"to="/forgot_password">Reset</Link></strong></span>
                 </form>
