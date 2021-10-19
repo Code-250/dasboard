@@ -5,6 +5,7 @@ import {QuestionCircleOutlined} from '@ant-design/icons';
 import Avatar from "@mui/material/Avatar";
 import Profile from '../../assets/red_icon.png'
 import {IoMdNotifications} from 'react-icons/io'
+import {LeftLayout} from './leftSideLayout';
  
 
 const {Header,Content, Sider} = Layout;
@@ -13,7 +14,7 @@ export const Dashboard:React.FC = ()=>{
     return(
         <Layout className="container">
             
-            <Sider className="left-sider">left sidebar</Sider>
+            <Sider className="left-sider"><LeftLayout/></Sider>
             <Layout>
                     <Header className="header">
                         <Row style={{display:"flex", justifyContent:"space-between"}}>

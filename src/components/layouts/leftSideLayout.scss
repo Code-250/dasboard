@@ -1,0 +1,35 @@
+
+.leftside-logo{
+    margin:auto;
+    padding:30px;
+}
+.nav-links{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height:53vh;
+    padding-top: 5rem;
+.nav-link{
+    gap:0px !important;
+    text-align: center;
+    .icon{
+        font-size: 25px !important;
+    }
+}
+}
+.logout-content{
+
+    padding-top:6rem;
+    display: flex;
+    justify-content: center;
+.logout{
+    gap:0px !important;
+    text-align:center;
+    .icon{
+        font-size: 25px !important;
+    }
+}
+}
+.active{
+    color:rgb(252, 94, 94);
+}
